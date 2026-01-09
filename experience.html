@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: yellow;
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* GRID CONTAINER */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* 3 columns */
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 18px;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <h1>FirstYear - SecondSem</h1>
+            <p>HTML</p>
+            <a href="https://github.com/kyawlwinoo13622-design/BookShop" class="btn">Go Code</a>
+        </div>
+
+        <div class="card">
+            <h1>SecondYear - FirstSem</h1>
+            <p>JavaScript</p>
+            <a href="https://github.com/kyawlwinoo13622-design/Library" class="btn">Go Code</a>
+        </div>
+
+        <div class="card">
+            <h1>ThirdYear - FirstSem</h1>
+            <p>PHP</p>
+            <a href="https://github.com/kyawlwinoo13622-design/Timetable" class="btn">Go Code</a>
+        </div>
+
+        <div class="card">
+            <h1>ThirdYear - SecondSem</h1>
+            <p>C#</p>
+            <a href="https://github.com/kyawlwinoo13622-design/FoodService" class="btn">Go Code</a>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

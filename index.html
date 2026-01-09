@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+
+        background-color: yellow;
+    }
+
+    .home {
+        padding-top: 20px;
+        margin: 5%;
+        background-color: white;
+        padding-bottom: 10%;
+    }
+
+    .right {
+        margin-right: 55%;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+    .picture {
+        margin-left: 25%;
+        margin-top: 10%;
+        border-radius: 20%;
+
+    }
+
+    .left_text {
+        position: absolute;
+        left: 45%;
+        top: 35%;
+        padding-bottom: 30px;
+    }
+
+
+
+
+
+    .gogit {
+        background-color: white;
+        padding: 5px;
+        border-radius: 20%;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .gogit:hover {
+        background-color: black;
+
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .b2 {
+        background-color: white;
+        padding: 5px;
+        border-radius: 20%;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .b2:hover {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+
+    }
+
+
+    .write {
+        margin-left: 20px;
+
+    }
+
+    .icon {
+        margin-left: 20px;
+        margin-top: 10px;
+        size: 10px;
+    }
+
+    .clickbutton {
+
+        margin-left: 20px;
+        color: black;
+        display: inline;
+    }
+
+    .bbba {
+        margin-top: 10%;
+    }
+
+    #myphone {
+        margin-left: 10px;
+    }
+</style>
+
+<body>
+    <div class="home">
+        <div class="toptext">
+            <div style="
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline;
+    padding-left: 15px;
+    margin-left: 20px;
+">
+            </div>
+            <a href="#" class="right">Kyaw Lwin Oo</a>
+            <a href="contact.html">Contact</a>
+            <div style="
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline;
+    padding-left: 15px;
+">
+            </div>
+            <a href="experience.html">Experience</a>
+            <div style="
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline;
+    padding-left: 15px;
+">
+            </div>
+            <a href="about.html">About</a>
+            <div style="
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline;
+    padding-left: 15px;
+">
+            </div>
+
+
+        </div>
+
+        <div>
+            <img src="profile234.jpg" class="picture" style="width: 15%; height: 15%;">
+        </div>
+
+        <div class="left_text">
+            <div class="write">
+                <p>Hello, I am</p>
+                <h3>kyaw Lwin Oo</h3>
+            </div>
+
+            <a href="https://github.com/kyawlwinoo13622-design" class="gogit">Go Github</a>
+            <a href="https://vercel.com/kyaw-lwin-oos-projects " class="b2">Go vercel</a><br>
+            <div class="bbba">
+                <p class="clickbutton">click this button</p>
+                <i class="fa fa-level-down"></i>
+            </div>
+
+            <div class="icon">
+                <span class="fa-stack fa-lg" id="gmail">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+
+                </span>
+                <span class="fa-stack fa-lg" id="facebook">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+
+                </span>
+                <span class="fa-stack fa-lg" id="phone">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+
+                </span>
+                <p id="myphone"></p>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+
+        let num = 0;
+        const phone = document.getElementById("phone");
+        const myphone = document.getElementById("myphone");
+
+        phone.addEventListener("click", function () {
+            num++;
+
+            if (num % 2 === 1) {
+                myphone.innerHTML = "09882698966 <br> 09670997177";
+                myphone.style.display = "block";
+            } else {
+                myphone.style.display = "none";
+            }
+        });
+
+
+        let num1 = 0;
+        const facebook = document.getElementById("facebook");
+        const myfacebook = document.getElementById("myphone");
+
+        facebook.addEventListener("click", function () {
+            num1++;
+
+            if (num1 % 2 === 1) {
+                myfacebook.innerHTML = "<a href='https://www.facebook.com/lucky.563610?mibextid=ZbWKwL'>Kyaw lwin oo facebook</a>";
+                myfacebook.style.display = "block";
+            } else {
+                myfacebook.style.display = "none";
+            }
+        });
+
+        let num2 = 0;
+        const gmail = document.getElementById("gmail");
+        const mygmail = document.getElementById("myphone");
+
+        gmail.addEventListener("click", function () {
+            num2++;
+
+            if (num2 % 2 === 1) {
+                mygmail.innerHTML = "<a href='mailto:kyawlwinoo13622@gmail.com'>kyawlwinoo13622@gmail.com</a>";
+                mygmail.style.display = "block";
+            } else {
+                mygmail.style.display = "none";
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

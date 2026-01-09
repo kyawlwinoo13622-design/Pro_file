@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Website Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: yellow;
+            margin: 0;
+            padding: 0;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: black;
+            font-size: 15px;
+        }
+
+        ul {
+            margin-top: 15px;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="about-container">
+
+        <div style="
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 3px solid black;
+">
+        </div>
+
+        <h1>About Me</h1>
+        <p>
+            I am a computer science student at Computer University in Pyay. I have experience creating projects using
+            HTML,
+            CSS,
+            JavaScript, J2EE, and PHP. Currently,
+            I am learning AI, Machine Learning, and Natural Language Processing (NLP).
+        </p>
+
+        <p>
+            During my first year, second semester, I developed a project called “Bookshop.”
+            In my second year, first semester, I worked on a project for a library system.
+            In my third year, first semester, I created a project for a school timetable.
+            Finally, in my third year, second semester, I developed a project called “Food Service.”
+        </p>
+
+        <!-- <ul>
+            <li>HTML creates headings, paragraphs, images, and forms</li>
+            <li>CSS controls colors, layouts, and responsive design</li>
+            <li>Good design improves usability and accessibility</li>
+        </ul> -->
+        <p id="day"></p>
+        <p id="good"></p>
+    </div>
+    <script>
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 10) {
+            greeting = "Good morning...";
+        }
+        else if (time < 18) {
+            greeting = "Good evening..";
+        }
+        else {
+            greeting = "Good night...";
+        }
+        document.getElementById("good").innerHTML = "Have a " + greeting;
+
+
+        let day;
+        let date = new Date().getDay();
+        switch (date) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+        document.getElementById("day").innerHTML = "Today is " + day;
+    </script>
+</body>
+
+</html>
